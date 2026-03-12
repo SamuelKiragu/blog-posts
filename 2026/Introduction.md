@@ -1,4 +1,4 @@
-### Why I built this site
+### Why I built this
 The 'why' and the 'what' that make this site a reality.
 
 ### A Digital Garden!
@@ -28,7 +28,7 @@ GitHub allows users to host their repositories and make them publicly available.
 
 Leveraging GitHub's Issues and PRs (Pull Requests), developers can easily collaborate with multiple AI agents across different repositories. 
 
-> **For example:** *I encountered an issue building the static app on Azure. I had deleted some unneeded modules and code from the cloned GitHub repository. This left some broken links that raised Typescript exceptions while running a deployment workflow. To solve this:
+> **For example:** I encountered an issue building the static app on Azure. I had deleted some unneeded modules and code from the cloned GitHub repository. This left some broken links that raised Typescript exceptions while running a deployment workflow. To solve this:
 >  
 >  1. I used GitHub Copilot to explain the issue encountered.
 > 2. I used the error logs generated in the workflow's failing job and the suggested explanation from the explain request prompt to GitHub Copilot to create an issue. 
