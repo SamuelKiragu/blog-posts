@@ -2,7 +2,7 @@
 The 'why' and the 'what' that make this site a reality.
 
 ### A Digital Garden!
-The digital garden manifesto is inspiring! Having a small space in the Internet that gradually grows as you grow is comforting to me; I place to comfortably make mistakes and learn from them. This site is my implementation of this old yet gold notion of a digital garden. I will use this space to share helpful findings. I will also gradually improve the look and feel of the site :) 
+The digital garden manifesto is inspiring! Having a small space in the Internet that gradually grows as you grow is comforting to me; its a place to comfortably make mistakes and learn from them. This site is my implementation of this old yet gold notion of a digital garden. I will use this space to share helpful findings. I will also gradually improve the look and feel of the site :) 
 
 As I find and share, I hope that you'll benefit (and perhaps be entertained). If this inspires you to start something of your own, Great!
 
