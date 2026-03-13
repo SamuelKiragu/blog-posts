@@ -1,4 +1,4 @@
-### Why I built this
+### Why I built this site
 The 'why' and the 'what' that make this site a reality.
 
 ### A Digital Garden!
