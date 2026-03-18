@@ -2,5 +2,6 @@
 set -e
 
 PANDOC_VERSION=$(curl -sSL --fail https://api.github.com/repos/jgm/pandoc/releases/latest | grep '"tag_name"' | sed -E 's/.*"([^"]+)".*/\1/')
-curl -sSL --fail "https://github.com/jgm/pandoc/releases/download/${PANDOC_VERSION}/pandoc-${PANDOC_VERSION}-1-amd64.deb" -o pandoc.deb
+PANDOC_VERSION_STRIPPED=${PANDOC_VERSION#v}
+curl -sSL --fail "https://github.com/jgm/pandoc/releases/download/${PANDOC_VERSION}/pandoc-${PANDOC_VERSION_STRIPPED}-1-amd64.deb" -o pandoc.deb
 sudo dpkg -i pandoc.deb
