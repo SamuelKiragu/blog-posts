@@ -19,29 +19,10 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install pandoc
-        run: |
-          set -e
-          PANDOC_VERSION=$(curl -sSL --fail https://api.github.com/repos/jgm/pandoc/releases/latest | grep '"tag_name"' | sed -E 's/.*"([^"]+)".*/\1/')
-          curl -sSL --fail "https://github.com/jgm/pandoc/releases/download/${PANDOC_VERSION}/pandoc-${PANDOC_VERSION}-1-amd64.deb" -o pandoc.deb
-          sudo dpkg -i pandoc.deb
+        run: bash .github/scripts/install_pandoc
 
       - name: Generate PDF for ${{ github.event.inputs.year }}
-        run: |
-          set -e
-          YEAR="${{ github.event.inputs.year }}"
-          if [ ! -d "$YEAR" ]; then
-            echo "Error: Directory '$YEAR' does not exist."
-            exit 1
-          fi
-          mapfile -t MD_FILES < <(find "$YEAR" -maxdepth 1 -name "*.md" | sort)
-          if [ "${#MD_FILES[@]}" -eq 0 ]; then
-            echo "Error: No markdown files found in '$YEAR'."
-            exit 1
-          fi
-          pandoc "${MD_FILES[@]}" \
-            --from markdown \
-            --to pdf \
-            --output "$YEAR.pdf"
+        run: bash .github/scripts/generate_pdf "${{ github.event.inputs.year }}"
 
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4

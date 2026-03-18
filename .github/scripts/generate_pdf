@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+set -e
+
+YEAR="$1"
+
+if [ -z "$YEAR" ]; then
+  echo "Error: Year argument is required."
+  exit 1
+fi
+
+if [ ! -d "$YEAR" ]; then
+  echo "Error: Directory '$YEAR' does not exist."
+  exit 1
+fi
+
+mapfile -t MD_FILES < <(find "$YEAR" -maxdepth 1 -name "*.md" | sort)
+if [ "${#MD_FILES[@]}" -eq 0 ]; then
+  echo "Error: No markdown files found in '$YEAR'."
+  exit 1
+fi
+
+pandoc "${MD_FILES[@]}" \
+  --from markdown \
+  --to pdf \
+  --output "$YEAR.pdf"
