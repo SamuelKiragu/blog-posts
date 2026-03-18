@@ -21,6 +21,9 @@ jobs:
       - name: Install pandoc
         run: bash .github/scripts/install_pandoc
 
+      - name: Install LaTeX dependencies
+        run: sudo apt-get update && sudo apt-get install -y texlive-latex-extra
+
       - name: Generate PDF for ${{ github.event.inputs.year }}
         run: bash .github/scripts/generate_pdf "${{ github.event.inputs.year }}"
 
