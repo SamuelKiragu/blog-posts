@@ -46,5 +46,3 @@ Thirdly, VS Code's, Static Web App extension leverages GitHub Actions to deploy 
 
 ### Finally ...
 In as much as I've interacted with other development tools like astro, react, git, and typescript (only to name a few), the tools mentioned above have been foundational. To get a better overview of the tools used in this blog, feel free to **fork the [blog-template repository](https://github.com/SamuelKiragu/blog-template)** 
-
-Blessings!
