@@ -1,6 +1,6 @@
 ### Why I built this site
 The 'why' and the 'what' that make this site a reality.
-Azure, GitHub, GitHub Actions, GitHub Copilot, Software
+Azure, GitHub, GitHub Actions, GitHub Copilot
 
 ### A Digital Garden!
 The digital garden manifesto is inspiring! Having a small space in the Internet that gradually grows as you grow is comforting to me; its a place to comfortably make mistakes and learn from them. This site is my implementation of this old yet gold notion of a digital garden. I will use this space to share helpful findings. I will also gradually improve the look and feel of the site :) 
