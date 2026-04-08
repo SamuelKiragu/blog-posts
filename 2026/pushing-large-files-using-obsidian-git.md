@@ -10,6 +10,7 @@ Therefore, I downloaded, installed, and configured [git-lfs](https://docs.github
 ![[obsidian--error1.png]]
 
 
+
 To execute the command in the terminal, I **downloaded git-lfs, installed it, and configured it.** To make git-lfs work in obsidian, I had to ensure it was downloaded first, installed, and finally, properly configured.
 
 ### Making git-lfs work in obsidian-git
