@@ -6,9 +6,8 @@ I use [obsidian]([https://obsidian.md](https://obsidian.md/)) and [obsidian-git]
 
 ### Tracking large files using git? 
 Therefore, I downloaded, installed, and configured [git-lfs](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage). I successfully used the executable command via the terminal. However, I encountered the following error when I pushed the changes in obsidian using the controls provided by obsidian-git:
-![[../assets/obsidian--error1.png]]
-![Obsidian Error Image](../assets/obsidian--error1.png)
 
+![Obsidian Error Image](../assets/obsidian--error1.png)
 
 
 To execute the command in the terminal, I **downloaded git-lfs, installed it, and configured it.** To make git-lfs work in obsidian, I had to ensure it was downloaded first, installed, and finally, properly configured.
