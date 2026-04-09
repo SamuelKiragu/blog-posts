@@ -1,13 +1,13 @@
 ### Pushing Large Files Using Obsidian Git
 Properly configuring git-lfs for use with obsidian-git
-github, git-lfs, obsidian, obsidian-git
+Github, git-lfs, obsidian, obsidian-git
 
 I use [obsidian]([https://obsidian.md](https://obsidian.md/)) and [obsidian-git](https://github.com/Vinzent03/obsidian-git), an open community plugin, to track text files. Using git, I've successfully tracked changes across text files. Recently, I started working with large text files. The files exceeded the [upload limit to GitHub](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
 
 ### Tracking large files using git? 
 Therefore, I downloaded, installed, and configured [git-lfs](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage). I successfully used the executable command via the terminal. However, I encountered the following error when I pushed the changes in obsidian using the controls provided by obsidian-git:
 
-![[obsidian--error-1.png]]
+![[../assets/obsidian--error-1.png]]
 
 
 
